@@ -31,15 +31,3 @@ func main() {
 	http.ListenAndServe(":"+port, r)
 
 }
-
-func SignUpHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Sign Up"))
-}
-
-func LoginHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Login"))
-}
-
-func GetUserHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Get User"))
-}
